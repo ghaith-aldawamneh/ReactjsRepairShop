@@ -60,16 +60,7 @@ const Main = () => {
             <Skills />
             <Techs />
             <Table />
-            <Prices />
-            <StackProgress />
-            <Education />
-            <WorkExperience />
             <StartupProject />
-            <Achievement />
-            <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
             <Profile />
             <Footer />
             <ScrollToTopButton />

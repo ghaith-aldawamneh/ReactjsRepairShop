@@ -2,6 +2,7 @@ import React from "react";
 import {Fade} from "react-reveal";
 import { Tabs, Tab } from "react-bootstrap";
 import "./Table.scss";
+import Select from 'react-select';
 // reactstrap components
 import {
   Container,
@@ -13,6 +14,18 @@ import {ImTablet} from 'react-icons/im'
 import {IoPhonePortraitOutline} from 'react-icons/io5'
 import {AiOutlineLaptop} from 'react-icons/ai'
 import {BsSmartwatch} from 'react-icons/bs'
+
+const Countries = [
+  { label: "Albaniasss", value: 355 },
+  { label: "Argentinass", value: 54 },
+  { label: "Austriass", value: 43 },
+  { label: "Cocos Islandsss", value: 61 },
+  { label: "Kuwait", value: 965 },
+  { label: "Sweden", value: 46 },
+  { label: "Venezuela", value: 58 }
+];
+
+
 export default function Services() {
   const Demo = () => {
     return <div>Tab 4 using component screen readers</div>;
@@ -36,9 +49,7 @@ export default function Services() {
                           <th>VAT No.</th>
                           <th>Created</th>
                           <th>Status</th>
-                          <th>Price</th>
-                          <th></th>
-                          <th></th>
+                          <th className="row justify-content-center align-items-center">Price</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -57,158 +68,17 @@ export default function Services() {
                           <td>
                             <span class="status-icon bg-success"></span> Paid
                           </td>
-                          <td>$887</td>
-                          <td class="text-right">
-                            <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Manage</a>
-                            <div class="dropdown">
-                              <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
-                            </div>
-                          </td>
                           <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-edit"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><span class="text-muted">001402</span></td>
-                          <td><a href="invoice.html" class="text-inherit">UX Wireframes</a></td>
-                          <td>
-                            Adobe
-                          </td>
-                          <td>
-                            87956421
-                          </td>
-                          <td>
-                            12 Apr 2017
-                          </td>
-                          <td>
-                            <span class="status-icon bg-warning"></span> Pending
-                          </td>
-                          <td>$1200</td>
-                          <td class="text-right">
-                            <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Manage</a>
-                            <div class="dropdown">
-                              <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
-                            </div>
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-edit"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><span class="text-muted">001403</span></td>
-                          <td><a href="invoice.html" class="text-inherit">New Dashboard</a></td>
-                          <td>
-                            Bluewolf
-                          </td>
-                          <td>
-                            87952621
-                          </td>
-                          <td>
-                            23 Oct 2017
-                          </td>
-                          <td>
-                            <span class="status-icon bg-warning"></span> Pending
-                          </td>
-                          <td>$534</td>
-                          <td class="text-right">
-                            <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Manage</a>
-                            <div class="dropdown">
-                              <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
-                            </div>
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-edit"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><span class="text-muted">001404</span></td>
-                          <td><a href="invoice.html" class="text-inherit">Landing Page</a></td>
-                          <td>
-                            Salesforce
-                          </td>
-                          <td>
-                            87953421
-                          </td>
-                          <td>
-                            2 Sep 2017
-                          </td>
-                          <td>
-                            <span class="status-icon bg-secondary"></span> Due in 2 Weeks
-                          </td>
-                          <td>$1500</td>
-                          <td class="text-right">
-                            <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Manage</a>
-                            <div class="dropdown">
-                              <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
-                            </div>
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-edit"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><span class="text-muted">001405</span></td>
-                          <td><a href="invoice.html" class="text-inherit">Marketing Templates</a></td>
-                          <td>
-                            Printic
-                          </td>
-                          <td>
-                            87956621
-                          </td>
-                          <td>
-                            29 Jan 2018
-                          </td>
-                          <td>
-                            <span class="status-icon bg-danger"></span> Paid Today
-                          </td>
-                          <td>$648</td>
-                          <td class="text-right">
-                            <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Manage</a>
-                            <div class="dropdown">
-                              <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
-                            </div>
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-edit"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><span class="text-muted">001406</span></td>
-                          <td><a href="invoice.html" class="text-inherit">Sales Presentation</a></td>
-                          <td>
-                            Tabdaq
-                          </td>
-                          <td>
-                            87956621
-                          </td>
-                          <td>
-                            4 Feb 2018
-                          </td>
-                          <td>
-                            <span class="status-icon bg-secondary"></span> Due in 3 Weeks
-                          </td>
-                          <td>$300</td>
-                          <td class="text-right">
-                            <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Manage</a>
-                            <div class="dropdown">
-                              <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
-                            </div>
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-edit"></i>
-                            </a>
-                          </td>
+                            <div className="container-fluid">
+        <div className="row justify-content-center align-items-center">
+          <div className=""></div>
+          <div className="">
+            <Select options={Countries} />
+          </div>
+          <div className="col-md-4"></div>
+        </div>
+      </div>
+      </td>
                         </tr>
                       </tbody>
                     </table>

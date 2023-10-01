@@ -1,3 +1,5 @@
+
+
 import React, {useContext} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
@@ -33,59 +35,44 @@ export default function StartupProject() {
           </p>
 
           <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
-              return (
-                <div
-                  key={i}
-                  className={
-                    isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
-                  }
-                >
-                  {project.image ? (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.projectName}
-                        className="card-image"
-                      ></img>
-                    </div>
-                  ) : null}
+               
+                <div  className={isDark? "dark-mode project-card project-card-dark": "project-card project-card-light" }>
                   <div className="project-detail">
-                    <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
-                    >
-                      {project.projectName}
-                    </h5>
-                    <p
-                      className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
-                      }
-                    >
-                      {project.projectDesc}
-                    </p>
-                    {project.footerLink ? (
-                      <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    ) : null}
+                  <div class="text-center">
+            	<h4 class="excerpt d-block font-weight-bold">First PMS</h4>
+	            <span class="price"><h6 class="number">$78.98</h6></span></div>
+	            <div class="pricing-text">
+	              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+	            </div>
                   </div>
                 </div>
-              );
-            })}
+         
+                <div  className={isDark? "dark-mode project-card project-card-dark": "project-card project-card-light" }>
+                  <div className="project-detail">
+                  <div class="text-center">
+            	<h4 class="excerpt d-block font-weight-bold">First PMS</h4>
+	            <span class="price"><h6 class="number">$78.98</h6></span></div>
+	            <div class="pricing-text">
+	              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+	            </div>
+                  </div>
+                </div>
+
+                <div  className={isDark? "dark-mode project-card project-card-dark": "project-card project-card-light" }>
+                  <div className="project-detail">
+                  <div class="text-center">
+            	<h4 class="excerpt d-block font-weight-bold">First PMS</h4>
+	            <span class="price"><h6 class="number">$78.98</h6></span></div>
+	            <div class="pricing-text">
+	              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+	            </div>
+                  </div>
+                </div>
+
+                
+
+
+   
           </div>
         </div>
       </div>
