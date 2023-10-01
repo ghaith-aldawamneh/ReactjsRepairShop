@@ -24,10 +24,10 @@ function Header() {
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
-
+// in this stage we have to handle  the tech stage 
   return (
-    <Headroom>
-      <div  className={isDark ? "d-flex dark-menu header rounded-lg" : "d-flex header rounded-lg"}>
+    <Headroom className="shadow-lg">
+      <div  className={isDark ? "d-flex dark-menu header rounded-lg shadow-lg" : "d-flex header rounded-lg shadow-lg"}>
      
       <a href="/" className=" d-none logo col-1 d-md-flex justify-content-center align-items-center ">
           <span className="ml-3 logo-name col-12">          <img  style={{ width:  '100px' }}
