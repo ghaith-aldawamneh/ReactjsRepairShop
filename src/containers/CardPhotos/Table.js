@@ -32,9 +32,7 @@ export default function Services() {
   };
   return (
     <Fade bottom duration={1000} distance="40px">
-          <div className="container-fluid">
-      <div className="d-block "></div>
-        <div className="greet-main1">
+          <div className="container-fluid greet-main1">
                 <div class="card">
                   <div class="card-header">
                     <h3 class="card-title">Invoices</h3>
@@ -70,21 +68,18 @@ export default function Services() {
                           </td>
                           <td>
                             <div className="container-fluid">
-        <div className="row justify-content-center align-items-center">
-          <div className=""></div>
-          <div className="">
+        <div className=" row justify-content-center align-items-center ">
+          <div className="dropdown">
             <Select options={Countries} />
           </div>
           <div className="col-md-4"></div>
-        </div>
-      </div>
+        </div></div>
       </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                   </div>
-                </div>
                 </div>
   </Fade>
   );

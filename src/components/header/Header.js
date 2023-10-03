@@ -42,19 +42,17 @@ function Header() {
 					<div class="">
 						<div class="row">
 							<div class="col">
-								<div class=" d-flex">
+								<div class=" d-flex align-items-center justify-content-center">
 									<div class="icon d-flex align-items-center justify-content-center"><span className="mx-2 rounded-circle border border-warning"><FaLocationCrosshairs className="m-2 m-md-3 fa-1x "/></span></div>
 									<div class="text">721 New York NY 10016</div>
 								</div>
 							</div>
 							<div class="col">
-								<div class="top-wrap d-flex">
+								<div class=" d-flex align-items-center justify-content-center">
                 <div class="icon d-flex align-items-center justify-content-center"><span className="mx-2 rounded-circle border border-warning"><FiPhoneCall className="m-2 m-md-3 fa-1x "/></span></div>
-
-									<div class="text"><span></span><span>(+01) 123 456 7890</span></div>
+									<div class="text"><span>(+01) 123 456 7890</span></div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -81,32 +79,32 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">Who we are</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">Services</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource">Brands</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">Duties</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs">Prices</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks">discounts</a>
             </li>
           )}
           <li>

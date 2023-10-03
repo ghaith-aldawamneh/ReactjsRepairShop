@@ -1,4 +1,4 @@
-import React from "react";
+import React, {lazy} from "react";
 import {Fade} from "react-reveal";
 import { Tabs, Tab } from "react-bootstrap";
 import "./Services.scss";
@@ -6,6 +6,8 @@ import "./Services.scss";
 import {
   Container,
 } from "reactstrap";
+import {FaLocationArrow} from 'react-icons/fa'
+import {FaLocationCrosshairs} from 'react-icons/fa6'
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
@@ -14,6 +16,10 @@ import {IoPhonePortraitOutline} from 'react-icons/io5'
 import {AiOutlineLaptop} from 'react-icons/ai'
 import {BsSmartwatch} from 'react-icons/bs'
 export default function Services() {
+  
+ // const ServicesSub = lazy(() =>
+  //import("./ServicesSub")
+//);
   const Demo = () => {
     return <div>Tab 4 using component screen readers</div>;
   };
@@ -29,7 +35,7 @@ export default function Services() {
             <Nav.Item className="col-md-3 col-6 ">
               <Nav.Link eventKey="first" className="d-flex justify-content-center align-items-center btn-danger">
                 <IoPhonePortraitOutline className="m-md-3 fa-3x "/>
-           
+
                 <h2>Tab 1</h2></Nav.Link>
             </Nav.Item>
             <Nav.Item className="col-md-3 col-6">
@@ -52,9 +58,28 @@ export default function Services() {
         </div>
         <Col>
           <Tab.Content className="row justify-content-center">
-            <Tab.Pane eventKey="first" > <img 
+            <Tab.Pane eventKey="first" >
+              <div className="position-relative">
+              <div className="position-absolute container-fluid row">
+              <div className="col-5  zindex-dropdown ">
+
+
+
+									<div class="flex_j "><div className="custom-e zindex-tooltip"><FaLocationCrosshairs className="m-2 m-md-3 fa-1x  "/></div>
+                  <div class="mx-2 text fw-bold zindex-tooltip text-white-50">721 New York NY 10016</div>
+                  </div>
+                
+              </div>
+
+              </div>
+
+
+               <img className=""
                             alt="man sitting on table"
-                            src={require("../../assets/images/phone.jpg")}></img>
+                            src={require("../../assets/images/phone.jpg")}>
+                            </img>
+                            
+                           </div>
                           </Tab.Pane>
             <Tab.Pane eventKey="second"> <img 
                             alt="man sitting on table"

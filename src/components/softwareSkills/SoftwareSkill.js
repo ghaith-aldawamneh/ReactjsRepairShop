@@ -7,8 +7,6 @@ export default function SoftwareSkill() {
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons">
-
-                        
                 
                 <li className="software-skill-inline" >
           <img  style={{ width:  '80px' }}

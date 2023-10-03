@@ -3,6 +3,7 @@ import {Fade} from "react-reveal";
 import { Tabs, Tab } from "react-bootstrap";
 import "./Techs.scss";
 // reactstrap components
+//<p><a href="#" class="btn-custom">Read more</a></p>
 import {
   Container,
 } from "reactstrap";
@@ -37,7 +38,6 @@ export default function Services() {
               <div class="media-body pl-3">
                 <h3 class="heading">Oil change</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div>
             <div class="d-block d-flex">
@@ -47,7 +47,6 @@ export default function Services() {
               <div class="media-body pl-3">
                 <h3 class="heading">Tire Change</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div> 
 
@@ -60,7 +59,6 @@ export default function Services() {
               <div class="media-body pl-3">
                 <h3 class="heading">Batteries</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div> 
             <div class="d-block d-flex">
@@ -70,7 +68,6 @@ export default function Services() {
               <div class="media-body pl-3">
                 <h3 class="heading">Engine Repair</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div>    
           </div>
@@ -83,7 +80,6 @@ export default function Services() {
               <div class="media-body pl-3">
                 <h3 class="heading">Tow Truck</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div>
             <div class="d-block d-flex">
@@ -93,7 +89,6 @@ export default function Services() {
               <div class="media-body pl-3">
                 <h3 class="heading">Car Maintenance</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div>       
           </div>
