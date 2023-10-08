@@ -10,6 +10,7 @@ import StyleContext from "../../contexts/StyleContext";
 
 
 export default function Skills() {
+  const {Langsar} = useContext(StyleContext);//Langsar.intro_content
   const {isDark} = useContext(StyleContext);
   if (!skillsSection.display) {
     return null;
@@ -23,33 +24,20 @@ export default function Skills() {
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
-              {skillsSection.title}{" "}
+              {Langsar.brands_title}{" "}
             </h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode subTitle skills-text-subtitle"
-                  : "subTitle skills-text-subtitle"
-              }
-            >
-              {skillsSection.subTitle}
-            </p>
+  
             <SoftwareSkill />
             <div>
-              {skillsSection.skills.map((skills, i) => {
-                return (
                   <p
-                    key={i}
                     className={
                       isDark
                         ? "dark-mode subTitle skills-text"
                         : "subTitle skills-text"
                     }
                   >
-                    {skills}
+                   
                   </p>
-                );
-              })}
             </div>
           </div>
         </Fade>

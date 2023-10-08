@@ -4,6 +4,8 @@ import Greeting from "./greeting/Greeting";
 import Services from "./CardPhotos/Services";
 import Techs from "./CardPhotos/Techs";
 import Prices from "./CardPhotos/Prices";
+import Map from "./CardPhotos/Map";
+import Contactme from "./CardPhotos/Contactme";
 import Table from "./CardPhotos/Table";
 import Skills from "./skills/Skills";
 import StackProgress from "./skillProgress/skillProgress";
@@ -24,10 +26,17 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
+import {Langsar, germany,english} from "./Langs";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
+  
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+  const [Germ, setIsGerm] = useLocalStorage("Germ", false);
+  const [Langsarray, setLangs] = useLocalStorage("Langsar", germany);
+
+
+
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
 
@@ -44,12 +53,16 @@ const Main = () => {
   }, []);
 
   const changeTheme = () => {
-    setIsDark(!isDark);
+    setIsGerm(!Germ);
+    if(Germ==true){setLangs(germany)
+    console.log("Langsarray42",Langsarray)
+    }
+    else{setLangs(english)}
   };
 //row justify-content-center pb-5 mb-3
   return (
     <div className={isDark ? "dark-mode" : null}>
-      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
+      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme, Langsar: Langsarray}}>
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
         ) : (
@@ -58,9 +71,18 @@ const Main = () => {
             <Greeting />
             <Services/> 
             <Skills />
+            <Blogs />
+            
             <Techs />
             <Table />
+            <WorkExperience />
+            <Talks />
+            <StackProgress />
+            <Projects />
+            <Education />
             <StartupProject />
+            <Map />
+            <Contactme />
             <Profile />
             <Footer />
             <ScrollToTopButton />

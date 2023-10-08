@@ -36,22 +36,22 @@ export default function Services() {
               <Nav.Link eventKey="first" className="d-flex justify-content-center align-items-center btn-danger">
                 <IoPhonePortraitOutline className="m-md-3 fa-3x "/>
 
-                <h2>Tab 1</h2></Nav.Link>
+                <h2>Handy</h2></Nav.Link>
             </Nav.Item>
             <Nav.Item className="col-md-3 col-6">
               <Nav.Link eventKey="second" className="d-flex justify-content-center align-items-center ">
                 <ImTablet className="m-md-3 fa-3x"/>
-                <h2>Tab 1</h2></Nav.Link>
+                <h2>Tablet</h2></Nav.Link>
             </Nav.Item>
             <Nav.Item className="col-md-3 col-6">
               <Nav.Link eventKey="third" className="d-flex justify-content-center align-items-center">
                 <AiOutlineLaptop className="m-md-3 fa-3x"/>
-                <h2>Tab 1</h2></Nav.Link>
+                <h2>Laptop</h2></Nav.Link>
             </Nav.Item>
             <Nav.Item className="col-md-3 col-6">
               <Nav.Link eventKey="forth" className="d-flex justify-content-center align-items-center">
                 <BsSmartwatch className="m-md-3 fa-3x"/>
-                <h2>Tab 1</h2></Nav.Link>
+                <h2>Watch</h2></Nav.Link>
             </Nav.Item>
           </Nav>
           </div>

@@ -1,17 +1,24 @@
 import React, {useState, useEffect, useContext} from "react";
 import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
-import {blogSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import {AiOutlineLaptop} from 'react-icons/ai'
 export default function Blogs() {
+  const {Langsar} = useContext(StyleContext);//Langsar.intro_content
   const {isDark} = useContext(StyleContext);
+
+
+  const blogSection = Langsar.blogSection
+  
   const [mediumBlogs, setMediumBlogs] = useState([]);
   function setMediumBlogsFunction(array) {
     setMediumBlogs(array);
   }
   //Medium API returns blogs' content in HTML format. Below function extracts blogs' text content within paragraph tags
   function extractTextContent(html) {
+
+
     return typeof html === "string"
       ? html
           .split("p>")
@@ -21,6 +28,7 @@ export default function Blogs() {
       : NaN;
   }
   useEffect(() => {
+
     if (blogSection.displayMediumBlogs === "true") {
       const getProfileData = () => {
         fetch("/blogs.json")
@@ -69,7 +77,7 @@ export default function Blogs() {
                       key={i}
                       isDark={isDark}
                       blog={{
-                        url: blog.url,
+                    
                         image: blog.image,
                         title: blog.title,
                         description: blog.description
@@ -79,6 +87,7 @@ export default function Blogs() {
                 })
               : mediumBlogs.map((blog, i) => {
                   return (
+                    
                     <BlogCard
                       key={i}
                       isDark={isDark}
@@ -90,6 +99,11 @@ export default function Blogs() {
                     />
                   );
                 })}
+
+
+
+
+
           </div>
         </div>
       </div>

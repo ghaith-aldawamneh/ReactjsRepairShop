@@ -11,6 +11,7 @@ import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
+  const {Langsar} = useContext(StyleContext);//Langsar.intro_content
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
@@ -25,7 +26,7 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
-                {greeting.title}{" "}
+                {Langsar.intro_heading}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
               <p
@@ -35,18 +36,12 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                {greeting.subTitle}
+                {Langsar.intro_content}
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
-                  <Button
-                    text="See my resume"
-                    newTab={true}
-                    href={greeting.resumeLink}
-                  />
-                )}
+                <Button text={Langsar.contactme} href="#contact" />
+
               </div>
             </div>
           </div>

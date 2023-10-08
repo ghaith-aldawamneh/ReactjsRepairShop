@@ -5,21 +5,23 @@ import "./ToggleSwitch.scss";
 
 const ToggleSwitch = () => {
   const {isDark} = useContext(StyleContext);
-  const [isChecked, setChecked] = useState(isDark);
+  const {Germ} = useContext(StyleContext);
+  
+  const [isChecked, setChecked] = useState(!Germ);
   const styleContext = useContext(StyleContext);
 
   return (
     <label className="switch">
       <input
         type="checkbox"
-        checked={isDark}
+        checked={Germ}
         onChange={() => {
           styleContext.changeTheme();
           setChecked(!isChecked);
         }}
       />
       <span className="slider round">
-        <span className="emoji">{isChecked ? emoji("🌜") : emoji("☀️")}</span>
+        <span className="emoji">{!isChecked ? emoji("English") : emoji("German")}</span>
       </span>
     </label>
   );

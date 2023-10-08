@@ -18,6 +18,8 @@ import {
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+  const {Langsar} = useContext(StyleContext);
+  console.log("Langsarray123",Langsar)
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -79,7 +81,7 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Who we are</a>
+              <a href="#skills">{Langsar.header}</a>
             </li>
           )}
           {viewExperience && (
