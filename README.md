@@ -1,20 +1,15 @@
-# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)](https://github.com/saadpasta/developerFolio/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/saadpasta/developerFolio)](https://github.com/saadpasta/developerFolio/stargazers)  [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+# Frony end for mobile phone repairing center ⚡️ 
 
-## A clean, beautiful and responsive portfolio template for Developers!
+## A clean, beautiful and responsive front end website for phone repairing center
 
 
 <p align="center">
   <kbd>
 <img src="https://user-images.githubusercontent.com/53429438/106779355-e9cd9e80-666c-11eb-9417-8a4b54441bc6.gif"></img>
   </kbd>
-</p>
+<
 
 
-Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
-
-If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/saadpasta/developerFolio/issues).
-
-Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
 ## Table of Contents
 - [Sections](#sections)
@@ -29,7 +24,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 - [For the Future](#for-the-future)
 - [Contributors](#project-maintainers)
 
-## Portfolio Sections
+## Website Sections
 ✔️ Summary and About me\
 ✔️ Skills\
 ✔️ Education\
@@ -44,7 +39,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ✔️ Twitter Timeline\
 ✔️ GitHub Profile
 
-To view a live example, **[click here](https://developerfolio.js.org/)**.
+To view a live example, **[click here](https://hfcenter.de/)**.
 
 
 ## Getting Started
@@ -72,7 +67,7 @@ From your command line, clone and run developerFolio:
 
 ```bash
 # Clone this repository
-git clone https://github.com/saadpasta/developerFolio.git
+git clone https://github.com/saadpasta/ghaithaldawamneh
 
 # Go into the repository
 cd developerFolio
@@ -91,7 +86,7 @@ npm install
 npm start
 ```
 
-## Linking Portfolio to GitHub
+## Linking Website to GitHub
 
 Generate a classic GitHub personal access token following these [instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic) (make sure you don't select any scope just generate a simple token). If you are using [GitHub Actions](#configuring-github-actions-recommended) to deploy your portfolio you can skip this section.
 
@@ -129,7 +124,7 @@ If you are seeing something as shown below, follow these [instructions](https://
 
 ![ERROR](https://i.imgur.com/Hj6mu1K.png)
 
-If the above solution still doesn't work, visit the [wiki page](https://github.com/saadpasta/developerFolio/wiki/Github-Setup-For-Open-Source-Projects).
+
 
 ## Linking blogs section to Medium
 
@@ -144,11 +139,9 @@ MEDIUM_USERNAME = "YOUR MEDIUM USERNAME"
 
 * For Github Action, change the environment variable `MEDIUM_USERNAME` in `.github/workflows/deploy.yml`
 
-Set `displayMediumBlogs` to true or false in portofolio.js to display fetched Medium blogs, defaults to true.
 
 ## Change and customize every section according to your need.
 
-#### Personalize page content in `/src/portfolio.js` & modify it as per your need. You will also need to modify `index.html` to change the title and metadata to provide accurate SEO for your personal portfolio.
 
 ```javascript
 /* Change this file to get your Personal Porfolio */
