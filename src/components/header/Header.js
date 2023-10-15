@@ -19,7 +19,6 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const {Langsar} = useContext(StyleContext);
-  console.log("Langsarray123",Langsar)
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -46,13 +45,13 @@ function Header() {
 							<div class="col">
 								<div class=" d-flex align-items-center justify-content-center">
 									<div class="icon d-flex align-items-center justify-content-center"><span className="mx-2 rounded-circle border border-warning"><FaLocationCrosshairs className="m-2 m-md-3 fa-1x "/></span></div>
-									<div class="text">721 New York NY 10016</div>
+									<div class="text">{Langsar.header_loc}</div>
 								</div>
 							</div>
 							<div class="col">
 								<div class=" d-flex align-items-center justify-content-center">
                 <div class="icon d-flex align-items-center justify-content-center"><span className="mx-2 rounded-circle border border-warning"><FiPhoneCall className="m-2 m-md-3 fa-1x "/></span></div>
-									<div class="text"><span>(+01) 123 456 7890</span></div>
+									<div class="text"><span>{Langsar.header_num}</span></div>
 								</div>
 							</div>
 						</div>
@@ -76,41 +75,45 @@ function Header() {
           htmlFor="menu-btn"
           style={{color: "white"}}
         >
+
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">{Langsar.header}</a>
+              <a href="/contactme">{Langsar.header1}</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Services</a>
+              <a href="#services+">{Langsar.header2}</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Brands</a>
+              <a href="#brands">{Langsar.header3}</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Duties</a>
+              <a href="#whyus">{Langsar.header4}</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Prices</a>
+              <a href="#services">{Langsar.header5}</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">discounts</a>
+              <a href="#table">{Langsar.header6}</a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#prices">{Langsar.header7}</a>
+          </li>
+          <li>
+            <a href="#contact">{Langsar.header8}</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

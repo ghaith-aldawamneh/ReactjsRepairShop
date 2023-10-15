@@ -2,8 +2,8 @@
 
 :root {
   --light: #d0d1d3;
-  --dark: #040d14;
-  --green: #21ce99;
+  --dark: null;
+  --green: #17619a;
 }
 
 body {
@@ -73,7 +73,7 @@ form {
 
 .submit-btn {
   background-color: var(--dark);
-  color: var(--green) !important;
+  color: rgb(15, 31, 101) !important;
   padding: 15px 50px;
   border: 2px solid var(--green);
   border-radius: 10px;

@@ -10,7 +10,7 @@ export default function SplashScreen() {
     <div className={isDark ? "dark-mode splash-container" : "splash-container"}>
 
       <div className="splash-title-container">
-      <span className="ml-3 logo-name col-12">          <img  style={{ width:  '200px' }}
+        <span className="ml-3 logo-name col-12">          <img  style={{ width:  '200px' }}
                             alt="man sitting on table"
                             src={require("../../assets/images/logo.png")}
                           ></img></span>

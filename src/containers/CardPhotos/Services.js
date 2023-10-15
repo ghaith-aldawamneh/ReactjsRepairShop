@@ -25,7 +25,7 @@ export default function Services() {
   };
   return (
     <Fade bottom duration={1000} distance="40px">
-    <div className="container-fluid">
+    <div className="container-fluid" id="services">
       <div className="d-block ">
     <div  className="greet-main">
     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -68,7 +68,12 @@ export default function Services() {
 									<div class="flex_j "><div className="custom-e zindex-tooltip"><FaLocationCrosshairs className="m-2 m-md-3 fa-1x  "/></div>
                   <div class="mx-2 text fw-bold zindex-tooltip text-white-50">721 New York NY 10016</div>
                   </div>
-                
+                  
+                  <div class="flex_j "><div className="custom-e zindex-tooltip"><FaLocationCrosshairs className="m-2 m-md-3 fa-1x  "/></div>
+                  <div class="mx-2 text fw-bold zindex-tooltip text-white-50">721 New York NY 10016</div>
+                  </div>
+
+
               </div>
 
               </div>

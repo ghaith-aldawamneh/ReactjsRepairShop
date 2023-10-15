@@ -11,6 +11,9 @@ import {
 } from "reactstrap";
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
+  const {Langsar} = useContext(StyleContext);//Langsar.intro_content
+
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
@@ -29,7 +32,7 @@ export default function Contact() {
             </small>
           </Col> </div>
           <div className="col">
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
+            <h1 className="heading contact-title">{Langsar.contactInfo_title}</h1>
             <p
               className={
                 isDark
@@ -37,7 +40,7 @@ export default function Contact() {
                   : "subTitle contact-subtitle"
               }
             >
-              {contactInfo.subtitle}
+              {Langsar.contactInfo_subtitle}
             </p>
             <div
               className={
@@ -48,9 +51,9 @@ export default function Contact() {
                 <>
                   <a
                     className="contact-detail"
-                    href={"tel:" + contactInfo.number}
+                    href={"tel:" + Langsar.contactInfo_number}
                   >
-                    {contactInfo.number}
+                    {Langsar.contactInfo_number}
                   </a>
                   <br />
                   <br />
@@ -58,9 +61,9 @@ export default function Contact() {
               )}
               <a
                 className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
+                href={"mailto:" + Langsar.contactInfo_email_address}
               >
-                {contactInfo.email_address}
+                {Langsar.contactInfo_email_address}
               </a>
               <br />
               <br />

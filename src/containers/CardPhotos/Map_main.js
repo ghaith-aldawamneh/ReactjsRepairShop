@@ -32,7 +32,6 @@ const App = () => {
          <div className="greet-main">
     <div>
       <GoogleMap
-      mapContainerStyle={{ width: '100%', height: `50vh`}}
        
         zoom={19}
         center={center}

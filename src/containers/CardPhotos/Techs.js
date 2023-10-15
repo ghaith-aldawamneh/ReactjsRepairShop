@@ -24,7 +24,7 @@ export default function Services() {
   };
   return (
     <Fade bottom duration={1000} distance="40px">
-   <section class="ftco-section">
+   <section class="ftco-section" id="services">
     	<div class="container-fluid ">
         <div className="greet-main">
     		<div class=" row justify-content-center pb-5 mb-3">

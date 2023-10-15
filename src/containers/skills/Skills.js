@@ -17,7 +17,7 @@ export default function Skills() {
   }
   
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
+    <div className={isDark ? "dark-mode main" : "main"} id="brands">
       <div className="skills-main-div">
         <Fade right duration={1000}>
           <div className="skills-text-div">

@@ -60,16 +60,102 @@ const blogSection_eng = {
 export const germany={
   blogSection:blogSection_german,
   lang:"german",
-header: "germanyy",
+
+  header_loc:"721 New York NY 10016",
+header_num:"(+01) 123 456 7890",
+
+
+  header1: "Contact me",
+  header2: "A glance",
+  header3: "Brands",
+  header4: "why us",
+  header5: "services",
+  header6: "table",
+  header7: "prices",
+  header8: "CEO",
 
 
 
-welcome:"",
 
 
-intro_heading:"Willkommen im Handy Fix Center ",
-intro_content:"Ein leidenschaftliches Handy-Fix-Center 🚀 mit Erfahrung in der Reparatur mobiler Anwendungen mit den neuesten Technologien, Repair instead of throwing away: your local technology expert, Ihre elektronischen Geräte verdienen eine zweite Chance! Bei uns können Sie Ihre defekten Geräte ohne Datenverlust reparieren lassen. Ob Handy, Laptop oder Tablet – wir stehen Ihnen zur Seite.",
-contactme:"KONTAKTIERE MICH",
+  serv1_sen1:"1",
+  serv1_sen2:"2",
+  serv1_sen3:"3",
+  serv1_sen4:"4",
+  serv1_sen5:"5",
+  serv1_sen6:"6",
+  serv1_sen7:"7",
+
+
+  serv2_sen1:"11",
+  serv2_sen2:"22",
+  serv2_sen3:"33",
+  serv2_sen4:"44",
+  serv2_sen5:"55",
+  serv2_sen6:"66",
+  serv2_sen7:"77",
+
+  
+  serv3_sen1:"111",
+  serv3_sen2:"222",
+  serv3_sen3:"333",
+  serv3_sen4:"444",
+  serv3_sen5:"555",
+  serv3_sen6:"666",
+  serv3_sen7:"777",
+
+
+  serv4_sen1:"1111",
+  serv4_sen2:"2222",
+  serv4_sen3:"3333",
+  serv4_sen4:"4444",
+  serv4_sen5:"5555",
+  serv4_sen6:"6666",
+  serv4_sen7:"7777",
+
+
+
+
+
+
+  discount_header:"Unsere Preise im Überblick:",
+
+  discount1:"Displaytausch",
+
+  discount1_h1:"iPhone:Ab €79.00",
+  discount1_h2:"Samsung:Ab €99.00",
+  discount1_h3:"Google:Ab €99.00",
+
+  discount2:"Akkutausch:",
+
+  discount2_h1:"iPhone:Ab €50.00",
+  discount2_h2:"Samsung:Ab €50.00",
+  discount2_h3:"Google:Ab €50.00",
+
+  discount3:"Kleine Reparaturen:",
+  discount3_h1:"Ladeanschlussreparatur (allgemein):Ab€79.00",
+  discount3_h2:"Lautsprecherersatz (allgemein):Ab €79.00",
+  discount3_h3:"Kamerareparatur (allgemein):Ab €79.00",
+  
+  discount4:"Dienstleistungen:",
+  discount4_h1:"Ladebuchse reinigen: €15.00",
+  discount4_h2:"Schutzglas aufbringen: €5.00 pro Gerät",
+
+
+  contactName:"Namegermany",
+  contactEmail:"Emailgermany",
+  contactProblem:"Ihr Gerät",//Descunt
+  contactMessage:"Descunt",//Descunt
+  contactSubmit:"Submit",//Descunt
+
+
+
+  welcome:"empty_unused",
+
+
+  intro_heading:"Willkommen im Handy Fix Center ",
+  intro_content:"Ein leidenschaftliches Handy-Fix-Center 🚀 mit Erfahrung in der Reparatur mobiler Anwendungen mit den neuesten Technologien, Repair instead of throwing away: your local technology expert, Ihre elektronischen Geräte verdienen eine zweite Chance! Bei uns können Sie Ihre defekten Geräte ohne Datenverlust reparieren lassen. Ob Handy, Laptop oder Tablet – wir stehen Ihnen zur Seite.",
+  contactme:"KONTAKTIERE MICH",
 
 brands_title:"Welche Marken unterstützen wir?",
 brands_subtitle:"Wir unterstützen die meisten Mobiltelefonmarken:",
@@ -93,6 +179,12 @@ serv5_exp:"Unsere Techniker führen Softwareaktualisierungen durch und beheben F
 
 serv6:"Datenwiederherstellung:",
 serv6_exp:"Im Falle eines Datenverlusts stehen wir Ihnen zur Seite. Wir bemühen uns, Ihre wertvollen Daten wiederherzustellen.",
+
+contactInfo_title:"Contact Me ☎️ german",
+contactInfo_subtitle:"german DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.",
+contactInfo_number:"+92-0000000000",
+contactInfo_email_address:"saadpasta70@gmail.com",
+
 sen:"ddd",
 sen1:    emoji(
   "⚡ Reparaturen ohne Datenverlust: Unsere Techniker überprüfen Ihr Gerät sorgfältig und setzen auf professionelle Reparaturmethoden, um es wieder in Top-Zustand zu bringen, ohne dabei Ihre wichtigen Daten zu verlieren."),
@@ -107,13 +199,97 @@ sen3:    emoji(
 export const english={
   blogSection:blogSection_eng,
   lang:"english",
-  header: "englishhh",
-  welcome:"",
+  header: "empty_unused",
+
+header_loc:"721 New York NY 10016",
+header_num:"(+01) 123 456 7890",
+
+
+  header1: "Contact me",
+  header2: "A glance",
+  header3: "Brands",
+  header4: "why us",
+  header5: "services",
+  header6: "table",
+  header7: "prices",
+  header8: "CEO",
+
+
+
+  serv1_sen1:"1",
+  serv1_sen2:"2",
+  serv1_sen3:"3",
+  serv1_sen4:"4",
+  serv1_sen5:"5",
+  serv1_sen6:"6",
+  serv1_sen7:"7",
+
+
+  serv2_sen1:"11",
+  serv2_sen2:"22",
+  serv2_sen3:"33",
+  serv2_sen4:"44",
+  serv2_sen5:"55",
+  serv2_sen6:"66",
+  serv2_sen7:"77",
+
+  
+  serv3_sen1:"111",
+  serv3_sen2:"222",
+  serv3_sen3:"333",
+  serv3_sen4:"444",
+  serv3_sen5:"555",
+  serv3_sen6:"666",
+  serv3_sen7:"777",
+
+
+  serv4_sen1:"1111",
+  serv4_sen2:"2222",
+  serv4_sen3:"3333",
+  serv4_sen4:"4444",
+  serv4_sen5:"5555",
+  serv4_sen6:"6666",
+  serv4_sen7:"7777",
+
+
+  discount_header:"Our prices at a glance:",
+
+  discount1:"Display replacement",
+
+  discount1_h1:"iPhone:From €79.00",
+  discount1_h2:"Samsung:From €99.00",
+  discount1_h3:"Google:From €99.00",
+
+  discount2:"Battery replacement:",
+
+  discount2_h1:"iPhone:From €50.00",
+  discount2_h2:"Samsung:From €50.00",
+  discount2_h3:"Google:From €50.00",
+
+  discount3:"Small repairs:",
+  discount3_h1:"Charging port repair (general):From €79.00",
+  discount3_h2:"Speaker Replacement (General):From €79.00",
+  discount3_h3:"Camera Repair (General):From €79.00",
+  
+  discount4:"Services:",
+  discount4_h1:"Clean charging socket: €15.00",
+  discount4_h2:"Apply protective glass: €5.00 per device",
+
+
+  contactName:"Name",
+  contactEmail:"Email",
+  contactProblem:"Problem Name",
+  contactMessage:"Message",
+  contactSubmit:"Submit",
+
+
+  
+  welcome:"empty_unused",
 
 
   intro_heading:"Welcome to the Handy Fix Center ",
   intro_content:"A passionate cell phone fix center 🚀 with experience in repairing mobile applications using the latest technologies, Repair instead of throwing away: your local technology expert, your electronic devices deserve a second chance! With us you can have your defective devices repaired without data loss. Whether cell phone, laptop or tablet – we are at your side.",
-  contactme:"CONTACT ME",
+  contactme:"CONTACT MEgerman",
   brands_title:"Which brands do we support?",
   brands_subtitle:"We support most mobile phone brands:",
   serv_title:"We offer various services",
@@ -136,6 +312,14 @@ export const english={
   
   serv6:"Data recovery:",
   serv6_exp:"In the event of data loss, we are here to help you. We strive to restore your valuable data.",
+ 
+  contactInfo_title:"engContact Me",
+  contactInfo_subtitle:"DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.germany",
+  contactInfo_number:"+92-0000000000",
+  contactInfo_email_address:"saadpasta70@gmail.com",
+
+
+ 
   sen:"sssd",
   sen1: 
     "Repairs without data loss: Our technicians carefully check your device and use professional repair methods to get it back to top condition without losing your important data.",

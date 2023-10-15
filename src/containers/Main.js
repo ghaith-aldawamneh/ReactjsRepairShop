@@ -6,6 +6,9 @@ import Techs from "./CardPhotos/Techs";
 import Prices from "./CardPhotos/Prices";
 import Map from "./CardPhotos/Map";
 import Contactme from "./CardPhotos/Contactme";
+import Contactme2 from "./CardPhotos/Contactme2";
+import Contactme3 from "./CardPhotos/Contactme3";
+import Contactme4 from "./CardPhotos/Contactme4";
 import Table from "./CardPhotos/Table";
 import Skills from "./skills/Skills";
 import StackProgress from "./skillProgress/skillProgress";
@@ -25,7 +28,9 @@ import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
+import { HashRouter as Router,BrowserRouter, Route, Routes } from 'react-router-dom';
 import "./Main.scss";
+import Home from "./Home";
 import {Langsar, germany,english} from "./Langs";
 
 const Main = () => {
@@ -55,7 +60,6 @@ const Main = () => {
   const changeTheme = () => {
     setIsGerm(!Germ);
     if(Germ==true){setLangs(germany)
-    console.log("Langsarray42",Langsarray)
     }
     else{setLangs(english)}
   };
@@ -67,25 +71,20 @@ const Main = () => {
           <SplashScreen />
         ) : (
           <>
-            <Header />
-            <Greeting />
-            <Services/> 
-            <Skills />
-            <Blogs />
-            
-            <Techs />
-            <Table />
-            <WorkExperience />
-            <Talks />
-            <StackProgress />
-            <Projects />
-            <Education />
-            <StartupProject />
-            <Map />
-            <Contactme />
-            <Profile />
-            <Footer />
-            <ScrollToTopButton />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            </Route>
+            <Route path="/contactme" element={<Contactme />}>
+          </Route>
+            <Route path="/contactme2" element={<Contactme2 />}>
+          </Route>
+            <Route path="/contactme3" element={<Contactme3 />}>
+          </Route>
+            <Route path="/contactme4" element={<Contactme4 />}>
+          </Route>
+        </Routes>
+      </Router>
           </>
         )}
       </StyleProvider>

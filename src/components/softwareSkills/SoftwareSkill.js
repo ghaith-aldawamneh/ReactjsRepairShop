@@ -7,7 +7,6 @@ export default function SoftwareSkill() {
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons">
-                
                 <li className="software-skill-inline" >
           <img  style={{ width:  '80px' }}
                             alt="man sitting on table"
@@ -23,7 +22,6 @@ export default function SoftwareSkill() {
                             alt="man sitting on table"
                             src={require("../../assets/images/sony.png")}
                           ></img><p className="fw-bold" style={{fontSize:"13px"}}>Sony</p></li>
-
 <li className="software-skill-inline" >
           <img  style={{ width:  '100px' }}
                             alt="man sitting on table"
