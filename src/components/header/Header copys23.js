@@ -21,7 +21,7 @@ function Header() {
   const {Langsar} = useContext(StyleContext);
 
 
-  const {setpage1,setpage2,setpage33,setpage4,setpage5,setpage6,setpage7,setpage8,setpage9} = useContext(StyleContext);
+  const {setpage1,setpage2} = useContext(StyleContext);
 
 
   const viewExperience = workExperiences.display;
@@ -31,31 +31,15 @@ function Header() {
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
 
-  const handleLinkClick = (s) => {
-    setpage1(false);setpage2(false);setpage33(false);setpage4(false);setpage5(false);setpage6(false);setpage7(false);setpage8(false);;setpage9(false);
-    if(s=='1'){setpage1(true);}if(s=='2'){setpage2(true);}
-    if(s=='3'){setpage33(true);}if(s=='4'){setpage4(true);}
-    if(s=='5'){setpage5(true);}if(s=='6'){setpage6(true);}
-    if(s=='7'){setpage7(true);}if(s=='8'){setpage8(true);}
-    if(s=='9'){setpage9(true);}
-    
-    // You can perform additional actions here if needed
-  };
-  const handleLinkClickcontact = () => {
-    setpage1(true);
+  const handleLinkClick = () => {
+    setpage1(false);
     setpage2(false);
     
     // You can perform additional actions here if needed
   };
-  const handleLinkClickrights = () => {
-    setpage1(false);
-    setpage2(true);
-    
-    // You can perform additional actions here if needed
-  };
-
-  const scroll1 =(event) => {
+  const handleLinkClickcontact2 = (event) => {
     event.preventDefault();
+
     const targetId = event.target.getAttribute("href").substring(1); // Remove the "#" from the href
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
@@ -64,6 +48,15 @@ function Header() {
         top: targetElement.offsetTop,
       });
     }
+  };
+  const handleLinkClickcontact = (key1) => {
+
+  };
+  const handleLinkClickrights = () => {
+    setpage1(true);
+    setpage2(false);
+    
+    // You can perform additional actions here if needed
   };
 // in this stage we have to handle  the tech stage 
   return (
@@ -121,44 +114,44 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {(
             <li>
-              <a href="#contactme" onClick={scroll1}>{Langsar.header1}</a>
+              <a href="" onClick={handleLinkClickcontact('contactme')}>sss{Langsar.header1}</a>
             </li>
           )}
                     {(
             <li>
-              <a href="" onClick={handleLinkClickcontact}>{Langsar.header9}</a>
+              <a href="" onClick={handleLinkClickrights}>{Langsar.header9}</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#services" onClick={scroll1}>{Langsar.header2}</a>
+              <a href="#services" onClick={handleLinkClick('services')}>{Langsar.header2}</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#brands" onClick={scroll1} >{Langsar.header3}</a>
+              <a href="#brands" onClick={handleLinkClick('brands')}>{Langsar.header3}</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#whyus" onClick={scroll1}>{Langsar.header4}</a>
+              <a href="#whyus" onClick={handleLinkClick('whyus')}>{Langsar.header4}</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#services" onClick={scroll1}>{Langsar.header5}</a>
+              <a href="#services" onClick={handleLinkClick('services')}>{Langsar.header5}</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#table" onClick={scroll1}>{Langsar.header6}</a>
+              <a href="#table" onClick={handleLinkClick('table')}></a>
             </li>
           )}
           <li>
-            <a href="#prices" onClick={scroll1}>{Langsar.header7}</a>
+            <a href="#prices" onClick={handleLinkClick('prices')}>{Langsar.header7}</a>
           </li>
           <li>
-            <a href="#contact" onClick={scroll1}>{Langsar.header8}</a>
+            <a href="#contact" onClick={handleLinkClick('contact')}>{Langsar.header8}</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

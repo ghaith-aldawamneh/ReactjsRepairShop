@@ -35,9 +35,9 @@ export default function ServicesSub({array}) {
                       <div key={index} className="d-flex row  justify-content-center align-items-center">
                           {item.icon}
 
-                          								<div class=" d-flex align-items-center justify-content-center">
-                <div class="icon d-flex align-items-center justify-content-center"><span className="mx-2 rounded-circle border border-warning"><item.icon className="m-2 m-md-3 fa-1x "/></span></div>
-									<div class="text"><span>(+01) 123 456 7890</span></div>
+                          								<div className=" d-flex align-items-center justify-content-center">
+                <div className="icon d-flex align-items-center justify-content-center"><span className="mx-2 rounded-circle border border-warning"><item.icon className="m-2 m-md-3 fa-1x "/></span></div>
+									<div className="text"><span>(+01) 123 456 7890</span></div>
 								</div>
                           <h2>{item.title}</h2>
                       </div>

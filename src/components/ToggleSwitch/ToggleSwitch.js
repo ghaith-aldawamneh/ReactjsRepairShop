@@ -21,7 +21,7 @@ const ToggleSwitch = () => {
         }}
       />
       <span className="slider round">
-        <span className="emoji">{!isChecked ? emoji("English") : emoji("German")}</span>
+        <span className="emoji">{!isChecked ? emoji("German") : emoji("English")}</span>
       </span>
     </label>
   );

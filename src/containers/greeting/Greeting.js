@@ -18,8 +18,8 @@ export default function Greeting() {
   }
   return (
     <Fade bottom duration={1000} distance="40px">
-      <div className="greet-main mt-5" id="greeting">
-        <div className="greeting-main">
+      <section className="greet-main mt-5 " id="greeting">
+        <div className="greeting-main mt-md-1 mt-5">
           <div className="greeting-text-div">
             <div>
               <h1
@@ -59,7 +59,7 @@ export default function Greeting() {
             )}
           </div>
         </div>
-      </div>
+      </section>
     </Fade>
   );
 }

@@ -27,8 +27,8 @@ const App = () => {
 
   return (
     <Fade bottom duration={1000} distance="40px">
-    <section class="ftco-section">
-       <div class="container-fluid ">
+    <section className="ftco-section">
+       <div className="container-fluid ">
          <div className="greet-main">
     <div>
       <GoogleMap

@@ -12,7 +12,7 @@ import {
 export default function CardPhotos() {
   return (
     <Container className="container-lg">
-      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" className="btn btn-primary">Primary</button>
     <Row>
       <Col className="mb-5 mb-md-0" md="6">
         <Card className="card-lift--hover shadow border-0">

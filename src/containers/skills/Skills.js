@@ -4,7 +4,7 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import DisplaysLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 
@@ -17,7 +17,7 @@ export default function Skills() {
   }
   
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="brands">
+    <section className={isDark ? "dark-mode main" : "main"} id="brands">
       <div className="skills-main-div">
         <Fade right duration={1000}>
           <div className="skills-text-div">
@@ -42,6 +42,6 @@ export default function Skills() {
           </div>
         </Fade>
       </div>
-    </div>
+    </section>
   );
 }

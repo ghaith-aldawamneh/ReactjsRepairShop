@@ -24,76 +24,76 @@ export default function Services() {
   };
   return (
     <Fade bottom duration={1000} distance="40px">
-   <section class="ftco-section" id="services">
-    	<div class="container-fluid ">
+   <section className="ftco-section" id="services">
+    	<div className="container-fluid ">
         <div className="greet-main">
-    		<div class=" row justify-content-center pb-5 mb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
-          	<span class="subheading">{Langsar.serv_title}</span>
+    		<div className=" row justify-content-center pb-5 mb-3">
+          <div className="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
+          	<span className="subheading">{Langsar.serv_title}</span>
             
             <h2>{Langsar.serv_sub}</h2>
           </div>
         </div>
-    		<div class="row">
-          <div class="col-md-4 services ftco-animate fadeInUp ftco-animated">
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-car-service"></span>
+    		<div className="row">
+          <div className="col-md-4 services ftco-animate fadeInUp ftco-animated">
+            <div className="d-block d-flex">
+              <div className="icon d-flex justify-content-center align-items-center">
+            		<span className="flaticon-car-service"></span>
               </div>
               
-              <div class="media-body pl-3">
-                <h3 class="heading">{Langsar.serv1}</h3>
+              <div className="media-body pl-3">
+                <h3 className="heading">{Langsar.serv1}</h3>
                 <p>{Langsar.serv1_exp}</p>
               </div>
             </div>
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-tyre"></span>
+            <div className="d-block d-flex">
+              <div className="icon d-flex justify-content-center align-items-center">
+            		<span className="flaticon-tyre"></span>
               </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">{Langsar.serv2}</h3>
+              <div className="media-body pl-3">
+                <h3 className="heading">{Langsar.serv2}</h3>
                 <p>{Langsar.serv2_exp}</p>
               </div>
             </div> 
 
           </div>
-          <div class="col-md-4 services ftco-animate fadeInUp ftco-animated">
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-battery"></span>
+          <div className="col-md-4 services ftco-animate fadeInUp ftco-animated">
+            <div className="d-block d-flex">
+              <div className="icon d-flex justify-content-center align-items-center">
+            		<span className="flaticon-battery"></span>
               </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">{Langsar.serv3}</h3>
+              <div className="media-body pl-3">
+                <h3 className="heading">{Langsar.serv3}</h3>
                 <p>{Langsar.serv3_exp}</p>
               </div>
             </div> 
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-car-engine"></span>
+            <div className="d-block d-flex">
+              <div className="icon d-flex justify-content-center align-items-center">
+            		<span className="flaticon-car-engine"></span>
               </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">{Langsar.serv4}</h3>
+              <div className="media-body pl-3">
+                <h3 className="heading">{Langsar.serv4}</h3>
                 <p>{Langsar.serv4_exp}</p>
               </div>
             </div>    
           </div>
 
-          <div class="col-md-4 services ftco-animate fadeInUp ftco-animated">
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-tow-truck"></span>
+          <div className="col-md-4 services ftco-animate fadeInUp ftco-animated">
+            <div className="d-block d-flex">
+              <div className="icon d-flex justify-content-center align-items-center">
+            		<span className="flaticon-tow-truck"></span>
               </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">{Langsar.serv5}</h3>
+              <div className="media-body pl-3">
+                <h3 className="heading">{Langsar.serv5}</h3>
                 <p>{Langsar.serv5_exp}</p>
               </div>
             </div>
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-repair"></span>
+            <div className="d-block d-flex">
+              <div className="icon d-flex justify-content-center align-items-center">
+            		<span className="flaticon-repair"></span>
               </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">{Langsar.serv6}</h3>
+              <div className="media-body pl-3">
+                <h3 className="heading">{Langsar.serv6}</h3>
                 <p>{Langsar.serv6_exp}</p>
               </div>
             </div>       

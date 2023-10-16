@@ -1,10 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState,useContext} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Services from "./CardPhotos/Services";
 import Techs from "./CardPhotos/Techs";
 import Prices from "./CardPhotos/Prices";
 import Map_main from "./CardPhotos/Map_main";
+import Map from "./CardPhotos/Map";
 import Contactme from "./CardPhotos/Contactme";
 import Table from "./CardPhotos/Table";
 import Skills from "./skills/Skills";
@@ -28,21 +29,27 @@ import {useLocalStorage} from "../hooks/useLocalStorage";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "./Main.scss";
 import {Langsar, germany,english} from "./Langs";
+import StyleContext from "../contexts/StyleContext";
 
 const Home = () => {
- 
-//row justify-content-center pb-5 mb-3 
+  const {page1,page2} = useContext(StyleContext);//Langsar.intro_content
+
+//row justify-content-center pb-5 mb-3   false and false
   return (
-    <>          
+    <>
     <Header />
-    <Greeting />
-    <Services/> 
-    <Skills />
-    <Blogs />
-    <Techs />
-    <StartupProject />
-    <Map_main />
-    <Profile />
+    {!(page1 || page2) && <Greeting />}
+    {!(page1 || page2) &&<Services/> }
+    {!(page1 || page2) &&<Skills />}
+    {!(page1 || page2) &&<Blogs />}
+    {!(page1 || page2) &&<Techs />}
+    {!(page1 || page2) &&<StartupProject />}
+
+    <Contactme/>
+    {(page1 || page2) &&<Greeting />}
+
+
+    {!(page1 || page2) &&<Profile />}
     <Footer />
     <ScrollToTopButton />
     </>

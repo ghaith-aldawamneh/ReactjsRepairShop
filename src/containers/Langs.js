@@ -65,7 +65,7 @@ export const germany={
 header_num:"(+01) 123 456 7890",
 
 
-  header1: "Contact me",
+  header1: "Kontaktiere mich",
   header2: "A glance",
   header3: "Brands",
   header4: "why us",
@@ -73,6 +73,7 @@ header_num:"(+01) 123 456 7890",
   header6: "table",
   header7: "prices",
   header8: "CEO",
+  header9: "Kopierrechte",
 
 
 
@@ -141,12 +142,16 @@ header_num:"(+01) 123 456 7890",
   discount4_h1:"Ladebuchse reinigen: €15.00",
   discount4_h2:"Schutzglas aufbringen: €5.00 pro Gerät",
 
-
+  title_form:"Title",
   contactName:"Namegermany",
+  firstName:"Vorname",
   contactEmail:"Emailgermany",
+  phoneNumber:"Rufnummer",
   contactProblem:"Ihr Gerät",//Descunt
+  subject:"Betreff",
   contactMessage:"Descunt",//Descunt
-  contactSubmit:"Submit",//Descunt
+  contactSubmit:"Einreichen",//Descunt
+
 
 
 
@@ -213,6 +218,7 @@ header_num:"(+01) 123 456 7890",
   header6: "table",
   header7: "prices",
   header8: "CEO",
+  header9: "Copy Rights",
 
 
 
@@ -276,9 +282,13 @@ header_num:"(+01) 123 456 7890",
   discount4_h2:"Apply protective glass: €5.00 per device",
 
 
+  title_form:"Title",
   contactName:"Name",
+  firstName:"First Name",
   contactEmail:"Email",
+  phoneNumber:"PhoneNumber",
   contactProblem:"Problem Name",
+  subject:"Betreff",
   contactMessage:"Message",
   contactSubmit:"Submit",
 
@@ -289,7 +299,7 @@ header_num:"(+01) 123 456 7890",
 
   intro_heading:"Welcome to the Handy Fix Center ",
   intro_content:"A passionate cell phone fix center 🚀 with experience in repairing mobile applications using the latest technologies, Repair instead of throwing away: your local technology expert, your electronic devices deserve a second chance! With us you can have your defective devices repaired without data loss. Whether cell phone, laptop or tablet – we are at your side.",
-  contactme:"CONTACT MEgerman",
+  contactme:"CONTACT ME german",
   brands_title:"Which brands do we support?",
   brands_subtitle:"We support most mobile phone brands:",
   serv_title:"We offer various services",

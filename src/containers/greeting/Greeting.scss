@@ -1,5 +1,13 @@
 @import "../../_globalColor";
 
+@media (min-width: 768px) {
+  .m-8 {
+    margin: 2rem; /* You can adjust the value as needed */
+  }
+}
+.m9-9 {
+  margin: 10rem; /* You can adjust the value as needed */
+}
 .main {
   width: 90%;
   padding: 20px 10px;

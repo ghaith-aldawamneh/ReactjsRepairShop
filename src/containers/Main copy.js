@@ -39,9 +39,18 @@ const Main = () => {
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
   const [Germ, setIsGerm] = useLocalStorage("Germ", false);
 
+  const [pagetoggle, setpagetoggle] = useLocalStorage("pagetoggle", 0);
+
   const [page1, setpage1] = useLocalStorage("page1", 0);
   const [page2, setpage2] = useLocalStorage("page2", 0);
-  const [page3, setpage3] = useLocalStorage("page3", false);
+
+  const [page3, setpage3] = useLocalStorage("page3", 0);
+  const [page4, setpage4] = useLocalStorage("page4", 0);
+  const [page5, setpage5] = useLocalStorage("page5", 0);
+  const [page6, setpage6] = useLocalStorage("page6", 0);
+  const [page7, setpage7] = useLocalStorage("page7", 0);
+  const [page8, setpage8] = useLocalStorage("page8", 0);
+  const [page9, setpage9] = useLocalStorage("page9", 0);
 
 
   const [Langsarray, setLangs] = useLocalStorage("Langsar", germany);
@@ -60,6 +69,10 @@ const Main = () => {
         clearTimeout(splashTimer);
       };
     }
+
+
+
+    
   }, []);
 
   const changeTheme = () => {
@@ -69,17 +82,15 @@ const Main = () => {
     else{setLangs(english)}
   };
   useEffect(() => {
+    setLangs(germany);
     const storedPage1 = localStorage.getItem("page1");
     const storedPage2 = localStorage.getItem("page2");
 console.log(storedPage1,storedPage2)
     // Set the page1 and page2 states based on local storage values.
-    if(page3===true){
-    setpage1(false);
-    setpage2(false);
-    setpage3(false)
+    if(pagetoggle===true){
+    setpage1(false);setpage2(false); setpage3(false);setpage4(false); setpage5(false);setpage6(false); setpage7(false);setpage8(false);setpage9(false);
   }
-    else{setpage3(true);
-    
+    else{setpagetoggle(true);
     }
 
   }, []);
