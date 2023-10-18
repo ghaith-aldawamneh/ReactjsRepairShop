@@ -33,15 +33,15 @@ export default function Services() {
   return (
     <Fade bottom duration={1000} distance="40px">
           <div className="container-fluid greet-main1" id="table">
-                <div className="card">
-                  <div className="card-header">
-                    <h3 className="card-title">Invoices</h3>
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Invoices</h3>
                   </div>
-                  <div className="table-responsive">
-                    <table className="table card-table table-vcenter text-nowrap">
+                  <div class="table-responsive">
+                    <table class="table card-table table-vcenter text-nowrap">
                       <thead>
                         <tr>
-                          <th className="w-1">No.</th>
+                          <th class="w-1">No.</th>
                           <th>Invoice Subject</th>
                           <th>Client</th>
                           <th>VAT No.</th>
@@ -52,8 +52,8 @@ export default function Services() {
                       </thead>
                       <tbody>
                         <tr>
-                          <td><span className="text-muted">001401</span></td>
-                          <td><a href="invoice.html" className="text-inherit">Design Works</a></td>
+                          <td><span class="text-muted">001401</span></td>
+                          <td><a href="invoice.html" class="text-inherit">Design Works</a></td>
                           <td>
                             Carlson Limited
                           </td>
@@ -64,7 +64,7 @@ export default function Services() {
                             15 Dec 2017
                           </td>
                           <td>
-                            <span className="status-icon bg-success"></span> Paid
+                            <span class="status-icon bg-success"></span> Paid
                           </td>
                           <td>
                             <div className="container-fluid">

@@ -70,21 +70,21 @@ function Header() {
                           ></img></span>
         </a>
       <div className="col-11">  
-      <div className="wrap">
-	    <div className="container">
-				<div className="row justify-content-between">
-					<div className="">
-						<div className="row">
-							<div className="col">
-								<div className=" d-flex align-items-center justify-content-center">
-									<div className="icon d-flex align-items-center justify-content-center"><span className="mx-2 rounded-circle border border-warning"><FaLocationCrosshairs className="m-2 m-md-3 fa-1x "/></span></div>
-									<div className="text">{Langsar.header_loc}</div>
+      <div class="wrap">
+	    <div class="container">
+				<div class="row justify-content-between">
+					<div class="">
+						<div class="row">
+							<div class="col">
+								<div class=" d-flex align-items-center justify-content-center">
+									<div class="icon d-flex align-items-center justify-content-center"><span className="mx-2 rounded-circle border border-warning"><FaLocationCrosshairs className="m-2 m-md-3 fa-1x "/></span></div>
+									<div class="text">{Langsar.header_loc}</div>
 								</div>
 							</div>
-							<div className="col">
-								<div className=" d-flex align-items-center justify-content-center">
-                <div className="icon d-flex align-items-center justify-content-center"><span className="mx-2 rounded-circle border border-warning"><FiPhoneCall className="m-2 m-md-3 fa-1x "/></span></div>
-									<div className="text"><span>{Langsar.header_num}</span></div>
+							<div class="col">
+								<div class=" d-flex align-items-center justify-content-center">
+                <div class="icon d-flex align-items-center justify-content-center"><span className="mx-2 rounded-circle border border-warning"><FiPhoneCall className="m-2 m-md-3 fa-1x "/></span></div>
+									<div class="text"><span>{Langsar.header_num}</span></div>
 								</div>
 							</div>
 						</div>
