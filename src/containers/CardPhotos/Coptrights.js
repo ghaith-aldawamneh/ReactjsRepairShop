@@ -25,4 +25,4 @@ const App = () => {
 
 export default App;
   //copyrights to be set in the next time
-  //apiKey: 'AIzaSyCHFDOHLKtukJ7Jp4oqQTzrBIsCWN2NfPw'
+  //apiKey: ''

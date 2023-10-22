@@ -22,10 +22,10 @@ export default function Contact() {
           <div className="col d-flex justify-content-center align-items-center">
           <Col sm="3" xs="6">
             <img
-              alt="..."
+alt="..."
               className="img-fluid rounded-circle shadow"
-              src={require("../../assets/images/prof.png")}
-              style={{ }}
+              src={require("../../assets/images/smart watch.jpg")}
+              style={{width: "300px", height: "300px" }}
             />
                         <small className="d-block text-uppercase font-weight-bold mb-4">
          
